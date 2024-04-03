@@ -1,57 +1,144 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Tienda Virtual</title>
-    <link rel="stylesheet" href="style.css">
-    <style>
-      header {
-        border: 1px solid red;
-        height: 152px;
-      }
-      section {
-        border: 1px solid purple;
-        height: 340px;
-      }
-      main {
-        border: 1px solid blue;
-        height: auto;
-      }
-      footer {
-        border: 1px solid #009145; /* Hexadecimal color code*/
-        min-height: 368px;
-      }
-    </style>
-</head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Tienda Virtual</title>
+  <!-- Link de CSS -->
+  <link rel="stylesheet" href="css/style.css" />
+  <!-- Link de Íconos -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" />
+
 <body>
-    <header>
-    <div class="container"></div>
+  <header>
+    <div class="search">
+      <a href="index.html">
+        <img src="image/tiendamia-logo.svg" alt="Tiendamia" />
+      </a>
+    </div>
+    <div></div>
+    <div class="nav">
+      <ul>
+        <li><a href="#">Ofertas de la semana</a></li>
+      </ul>
+    </div>
   </header>
   <section>
     <div class="container"></div>
   </section>
-      <main>
-        <div class="container">
-          <div class="product-container">
-            <article class="product-card">
-              <img class="product-img" src="starter\assets\mock1.jpg" alt="Macbook Pro" />
-              <div class="product-info">
-                <span class="product-title">Macbook Pro 15'4</span>
-                <span class="product-description">Space Gray</span>
-                <div class="product-price-block">
-                  <span class="price">$750.000</span>
-                  <span class="discount">50% Off</span>
-                </div>
-                <div class="product-tax-policy">Incluye impuesto País y percepción AFIP</div>
-              </div>
-            </article>
+  <main>
+    <div class="container">
+      <div class="product-container">
+        <article class="product-card">
+          <img class="product-img" src="image/mock1.jpg" alt="Macbook Pro" />
+          <div class="product-info">
+            <span class="product-title">Macbook Pro 15'4</span>
+            <span class="product-description">Space Gray</span>
+            <div class="product-price-block">
+              <span class="price">$750.000</span>
+              <span class="discount">50% Off</span>
+            </div>
+            <div class="product-tax-policy">Incluye impuesto País y percepción AFIP</div>
+          </div>
+        </article>
+      </div>
+    </div>
+  </main>
+</body>
+
+
+<footer class="footer-section">
+  <div class="container">
+    <div class="footer-cta pt-5 pb-5">
+      <div class="row">
+        <div class="col-xl-4 col-md-4 mb-30">
+          <div class="single-cta">
+            <i class="fas fa-map-marker-alt"></i>
+            <div class="cta-text">
+              <h4>Find us</h4>
+              <span>1010 Avenue, sw 54321, chandigarh</span>
+            </div>
           </div>
         </div>
-      </main>
-   
-  <footer>
-    <div class="container"></div>
-  </footer>
-</body>
+        <div class="col-xl-4 col-md-4 mb-30">
+          <div class="single-cta">
+            <i class="fas fa-phone"></i>
+            <div class="cta-text">
+              <h4>Call us</h4>
+              <span>9876543210 0</span>
+            </div>
+          </div>
+        </div>
+        <div class="col-xl-4 col-md-4 mb-30">
+          <div class="single-cta">
+            <i class="far fa-envelope-open"></i>
+            <div class="cta-text">
+              <h4>Mail us</h4>
+              <span>mail@info.com</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="footer-content pt-5 pb-5">
+      <div class="row">
+        <div class="col-xl-4 col-lg-4 mb-50">
+          <div class="footer-widget">
+            <div class="footer-text">
+              <p>Lorem ipsum dolor sit amet, consec tetur adipisicing elit, sed do eiusmod tempor incididuntut consec
+                tetur adipisicing
+                elit,Lorem ipsum dolor sit amet.</p>
+            </div>
+            <div class="footer-social-icon">
+              <span>Follow us</span>
+              <a href="#"><i class="fab fa-facebook-f facebook-bg"></i></a>
+              <a href="#"><i class="fab fa-twitter twitter-bg"></i></a>
+              <a href="#"><i class="fab fa-google-plus-g google-bg"></i></a>
+            </div>
+          </div>
+        </div>
+        <div class="col-xl-4 col-lg-4 col-md-6 mb-50">
+          <div class="footer-widget">
+            <div class="footer-widget-heading">
+              <h3>Subscribe</h3>
+            </div>
+            <div class="footer-text mb-25">
+              <p>Don’t miss to subscribe to our new feeds, kindly fill the form below.</p>
+            </div>
+            <div class="subscribe-form">
+              <form action="#">
+                <input type="text" placeholder="Email Address">
+                <button><i class="fab fa-telegram-plane"></i></button>
+              </form>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="copyright-area">
+    <div class="container">
+      <div class="row">
+        <div class="col-xl-6 col-lg-6 text-center text-lg-left">
+          <div class="copyright-text">
+            <p>Copyright &copy; 2018, All Right Reserved <a href="https://codepen.io/anupkumar92/">Anup</a></p>
+          </div>
+        </div>
+        <div class="col-xl-6 col-lg-6 d-none d-lg-block text-right">
+          <div class="footer-menu">
+            <ul>
+              <li><a href="#">Home</a></li>
+              <li><a href="#">Terms</a></li>
+              <li><a href="#">Privacy</a></li>
+              <li><a href="#">Policy</a></li>
+              <li><a href="#">Contact</a></li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</footer>
+
 </html>
